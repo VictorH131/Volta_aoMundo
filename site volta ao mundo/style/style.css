@@ -1,0 +1,250 @@
+/* --------- Geral --------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/* --------- Config Header --------- */
+header {
+    background-image: url("../img/fundo_head_fi.png");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: #c40707;
+}
+.topo{
+    width: 1200px;
+    margin: auto; 
+}
+
+header p{
+    text-align: left;
+    font-style: italic;
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin: 0 50px;
+    color: #00247D;
+}
+header h1 {
+    font-size: 55px;
+    margin: 0 290px;
+    padding-top: 20px;
+    text-align: center;
+    width: 280px;
+    height: 80px;
+    background-color: #FFF;
+    margin-top: 55px;
+    font-family: 'Playfair Display', serif;
+    
+    
+}
+
+header h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 10px 50px;
+    padding-top: 10px;
+    color: #00247D;
+}
+
+
+/* --------- config NAV ---------*/
+nav {
+	background-color: #00247D;
+}
+.navagacao{
+    width: 1200px;
+    height: 50px;
+    padding: 8px;
+    margin: auto;
+}
+nav ul {
+	list-style-type: none;
+	text-transform: uppercase;
+}
+nav ul li {
+	float: left;
+}
+nav ul li a {
+    text-decoration: none;
+	font-size: 18px;
+	width: 232px;
+	display: block;
+	text-align: center;
+	padding: 12px 4px 12px 4px;
+	color: #FFF;
+    
+
+}
+nav ul li a:hover {	
+	background-color: #f8f8f8;
+	color: #00247D;
+    border-radius: 10px;
+}
+#hrnav{
+    border: 8px solid #0c0d50;
+}
+
+/* --------- config main ---------*/
+main {
+    background-color: #FFF;
+}
+.conteudo {
+    width: 1125px;
+    margin: auto; 
+    padding: 25px 0; 
+}
+main h2 {
+    color: #c40707;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+main p {
+    line-height: 30px;
+    text-indent: 50px;
+    text-align: justify;
+    margin: 10px 0 20px;
+}
+main img {    
+    border: 13px double	 #0d0080;
+    margin: 10px 0 25px;
+}
+
+/* --------- config footer ---------*/
+
+footer {
+    clear: both;
+    color: #FFF;
+    background-color: #00247D;
+    padding: 35px 0 30px;
+    letter-spacing: 1px;
+}
+footer p {
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#hrfoo{
+    border: 8px solid #0c0d50;
+}
+
+/* --------- config main Index ---------*/
+main .linha-superior {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; 
+}
+
+#mainindex .caixa, .caixa2 {
+    flex: 1;
+    min-width: 250px;
+   
+}
+
+#mainindex .caixa2{
+    margin-top: 35px;
+    
+}
+#mainindex .linha-inferior {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content:left
+}
+
+#mainindex .linha-inferior img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+#mainindex .imagens {
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+
+#mainindex .imagens img {
+    width: 400px; 
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    object-fit: cover; 
+}
+
+
+/* --------- config main turismo ---------*/
+
+#mainturis main {
+    text-align: center;
+}
+
+#mainturis p {
+    width: 500px;
+    
+}
+
+#mainturis .imagens {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    
+}
+
+#mainturis .imagem-container {
+    width: 300px;
+    cursor: pointer;
+}
+
+#mainturis .imagem-container img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    transition: border-color 0.3s;
+    border: 13px double	 #0c0174;
+    margin: 10px 0 25px;
+}
+
+#mainturis .imagem-container:hover img {
+    border-color: #1900ff;
+}
+
+#mainturis .descricao {
+    margin-top: 8px;
+    margin-left: 30px;
+    font-size: 1rem;
+    color: #333;
+    display: none;
+    border: 1px solid #c40707;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    min-height: 60px;
+}
+
+#mainturis .imagem-container.active img {
+    border-color: #c40707;
+}
+
+#mainturis .imagem-container.active .descricao {
+    display: block;
+}
+#mainturis #texto {
+    text-align: center;
+    margin-bottom: 100px;
+}
+#mainturis #texto P{
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+/* --------- config main turismo ---------*/
