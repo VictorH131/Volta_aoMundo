@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo - Volta ao mundo</title>
+    <link rel="icon" href="img/terra.png"> <!--Icone do site-->
+    <link rel="stylesheet" href="style/style.css"> <!--estilo(Css) do site-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!--fonte do Header (nome Do país)--> <!--lembrar de achar um mais bonito-->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <div class="topo">
+            <h1>Inglaterra</h1>
+            <h3>Conheça a maravilhosa cultura, Curiosidades e pontos Turisticos da Inglaterra</h3>
+            <p>Por Victor Hernandez</p>
+        </div>
+    </header>
+
+    <!--Nav-->
+    <nav>
+        <div class="navagacao">
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="turismo.html">Pontos Turísticos</a></li>
+                <li><a href="cultura.html">Cultura e Tradições</a></li>
+                <li><a href="Curiosidades.html">Curiosidades</a></li>
+                <li><a href="informacoes.html">Informações Gerais</a></li>
+            </ul>
+        </div>
+    </nav>
+    <hr id="hrnav">
+
+
+    <!--texto e imagens do turismo-->
+    <main id="mainturis">
+        <div id=texto>
+            <h2>Pontos Turísticos</h2>
+            <p>
+                A Inglaterra é repleta de locais históricos e atrações que encantam visitantes do mundo inteiro.
+                Desde o icônico Big Ben e o Palácio de Buckingham em Londres, até os antigos castelos medievais e
+                parques naturais.
+                Cada ponto turístico oferece uma experiência única que une história, cultura e beleza natural.
+            </p>
+        </div>
+
+        <section class="carrossel-vertical">
+            <div class="navegacao-setas">
+                <button onclick="anterior()">↑</button>
+                <button onclick="proximo()">↓</button>
+            </div>
+
+            <div class="galeria-central">
+                <img id="imgAnterior" class="miniatura" src="img/stonehenge.png" alt="Imagem anterior"
+                    onclick="anterior()">
+
+                <div class="imagem-principal">
+                    <img id="imagemAtiva" src="img/bigben.png" alt="Imagem destaque">
+                </div>
+
+                <img id="imgProxima" class="miniatura" src="img/buckingham.png" alt="Imagem seguinte"
+                    onclick="proximo()">
+            </div>
+
+            <div class="descricao-lateral">
+                <h3 id="tituloImagem">Big Ben</h3>
+                <p id="textoImagem">
+                    O Big Ben é um dos marcos mais famosos do Reino Unido. Localizado no Parlamento, é símbolo da
+                    pontualidade britânica e um ícone de Londres.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/turismo.js"></script>
+
+    <!--Footer-->
+    <hr id="hrfoo">
+    <footer>
+        <p><strong>Projeto Volta ao Mundo - Inglaterra</strong></p>
+        <p><em>Desenvolvido por Victor HS</em></p>
+    </footer>
+</body>
+
+</html>
