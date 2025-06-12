@@ -212,119 +212,168 @@ footer p {
 
 
 /* --------- config main turismo ---------*/
+.fundo-main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 3px solid #00247D;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #333;
+}
 
+#mainturis {
+    background-image: url('../img/tower-bridge.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 40px 0;
+    
+}
+
+#mainturis h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00247D;
+    text-align: center;
+}
+
+#mainturis #texto {
+    margin-bottom: 40px;
+    text-align: justify;
+    padding: 0 40px;
+}
 
 #mainturis p {
-  width: 500px;
-  max-width: 600px;
-  margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-#mainturis .carrossel-vertical {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  padding: 60px 0;
+/* Carrossel vertical */
+.carrossel-vertical {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 0;
 }
 
-#mainturis .navegacao-setas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+.navegacao-setas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-#mainturis .navegacao-setas button {
-  background-color: #00247D;
-  color: white;
-  border: none;
-  padding: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+.navegacao-setas button {
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #00247D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-#mainturis .navegacao-setas button:hover {
-  background-color: #00164e;
+.navegacao-setas button:hover {
+    background-color: #00164e;
 }
 
-#mainturis .galeria-central {
-  display: flex;
-  flex-direction: column;
-  margin-left: -10px;
-  gap: 10px;
+.galeria-central {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-#mainturis .miniatura {
-  width: 110px;
-  height: 80px;
-  opacity: 0.6;
-  border: 2px solid #00247D;
-  cursor: pointer;
-  margin-left: -60px;
+.galeria-central .miniatura {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s;
 }
 
-#mainturis .miniatura:hover {
-  opacity: 0.9;
+.galeria-central .miniatura:hover {
+    transform: scale(1.05);
+    border-color: #00247D;
 }
 
-#mainturis .imagem-principal img {
-  width: 100%;
-  max-width: 450px;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border: 8px double #00247D;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-
+.imagem-principal img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-#mainturis .descricao-lateral {
-  padding: 20px;
-  background-color: #ffffff;
-  border: 3px solid #00247D;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  height: 150px;
+/* Descrição ao lado da imagem */
+.descricao-lateral {
+    max-width: 300px;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 5px solid #00247D;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-#mainturis .descricao-lateral h3 {
-  color: #c40707;
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  margin-bottom: 15px;
+.descricao-lateral h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #c40707;
 }
 
-#mainturis .descricao-lateral p {
-  font-size: 16px;
-  line-height: 1.6;
+.descricao-lateral p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+.imagem-principal {
+    position: relative;
 }
 
-#texto {
-  margin-left: 100px;
-  margin-right: 100px;
-  font-family: Verdana, Tahoma, sans-serif;
-  color: #333;
+.seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 36, 125, 0.1);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    opacity: 0; /* invisível por padrão */
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    user-select: none;
 }
 
-#texto h2 {
-  font-family: 'Playfair Display', serif;
-  color: #00247D;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  text-align: center;
+
+.seta-esquerda {
+    left: 10px;
 }
 
-#texto p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  min-height: 4.8em;
-  margin: 0 auto;
-  white-space: normal;
+.seta-direita {
+    right: 10px;
+}
+
+
+.imagem-principal:hover .seta {
+    opacity: 1;
+}
+
+
+.seta:hover {
+    background-color: rgba(0, 36, 125, 0.5);
 }
 
 /* --------- config main Cultura ---------*/
@@ -462,7 +511,7 @@ footer p {
 
 #mainicuri {
   padding: 60px 100px;
-  background-image: url('../img/fundo_index.png');
+  background-image: url('../img/tower-bridge.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; /*remova para variante, 1.0 Versão anterior*/
