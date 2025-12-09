@@ -579,3 +579,99 @@ footer p {
   color: #7a297a;
   font-weight: bold;
 }
+
+
+/* ---------- QUIZ / VERDADEIRO OU FALSO ---------- */
+
+.quiz-container {
+    background: #ffffffee;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 550px;
+    border-radius: 14px;
+    text-align: center;
+    border: 4px double #00247D;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    animation: aparecerQuiz .4s ease-in-out;
+}
+
+.quiz-container h6 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #00247D;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px #b7c8ff;
+}
+
+.quiz-container p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Botões principais */
+.quiz-container button {
+    padding: 12px 28px;
+    margin: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #00247D;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.25s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.quiz-container button:hover {
+    background: #00185a;
+    transform: scale(1.05);
+}
+
+/* Botão Próxima */
+#btnProxima {
+    background: #c40707;
+}
+
+#btnProxima:hover {
+    background: #900000;
+}
+
+/* Feedback */
+#feedback {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 30px;
+    margin-left: -50px;
+}
+
+/* Pontuação */
+#pontuacao {
+    margin-top: 18px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.feedback-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Animação suave */
+@keyframes aparecerQuiz {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -38,6 +38,22 @@
     <!-- Main -->
     <main id="mainicuri">
         
+        <div id="jogoVerdadeiroFalso" class="quiz-container">
+            <h6>Jogo: Verdadeiro ou Falso — Inglaterra</h6>
+            <p id="pergunta"></p>
+
+            <div class="botoes">
+                <button onclick="responder(true)">Verdadeiro</button>
+                <button onclick="responder(false)">Falso</button>
+            </div>
+            <div class="feedback-area">
+                <p id="feedback"></p>
+                <button id="btnProxima" onclick="proxima()" style="display:none;">Próxima Pergunta</button>
+            </div>
+            
+            <h3 id="pontuacao"></h3>
+        </div>
+
         <div class="curiosidades-container">
 
             <h1 class="titulo-principal">Curiosidades sobre a Inglaterra</h1>
@@ -198,23 +214,9 @@
                 <li>As histórias de fantasmas são tão numerosas que há roteiros oficiais de turismo.</li>
             </ul>
 
-            <!-- MODA BRITÂNICA -->
-            <h2 class="categoria-moda">Moda Britânica</h2>
-            <ul class="lista-curiosidades">
-                <li>A minissaia foi popularizada por uma estilista britânica, Mary Quant.</li>
-                <li>O estilo punk nasceu em Londres com o Sex Pistols e camisas rasgadas.</li>
-                <li>Guarda-chuvas são parte do visual britânico clássico, mesmo sem uso.</li>
-                <li>Os chapéus extravagantes em casamentos reais viram notícia no mundo todo.</li>
-                <li>O “tweed” é tecido tradicional britânico, muito usado em caça e moda vintage.</li>
-                <li>O estilo “mod” dos anos 60 nasceu em Londres com ternos slim e scooters.</li>
-                <li>O design das togas universitárias ainda é usado em Oxford e Cambridge.</li>
-                <li>As botas “Chelsea” foram criadas na era vitoriana.</li>
-                <li>Uniformes escolares ainda seguem padrões vitorianos em várias escolas britânicas.</li>
-                <li>O kilt é escocês, mas muitas marcas britânicas adotam variações em coleções de moda.</li>
-            </ul>
-
         </div>
     </main>
+    <script src="js/jogo.js"></script>
 
 
     <!--Footer-->
