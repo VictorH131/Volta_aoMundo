@@ -663,6 +663,13 @@ footer p {
     gap: 10px;
 }
 
+.selecionado {
+    background: #0043c2 !important;
+    transform: scale(1.07) !important;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4) !important;
+    border: 2px solid #ffffff;
+}
+
 
 /* Animação suave */
 @keyframes aparecerQuiz {
